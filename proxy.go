@@ -14,9 +14,9 @@ import (
 var (
 	crt          = flag.String("crt", "", "Usage: -crt=<path/to/crt_file>")
 	key          = flag.String("key", "", "Usage: -key=<path/to/key_file>")
-	local_addr   = flag.String("local_addr", "0.0.0.0:443", "Usage: -local_addr=<local_port>")
-	forward_port = flag.Int("forward_port", 9000, "Usage: -local_port=<local_port>")
-	remote_addr  = flag.String("remote_addr", "", "Usage: -remote_addr=<local_port>")
+	local_addr   = flag.String("local_addr", "0.0.0.0:443", "Usage: -local_addr=<local_addr:local_port>")
+	forward_port = flag.Int("forward_port", 9000, "Usage: -forward_port=<forward_port>")
+	remote_addr  = flag.String("remote_addr", "", "Usage: -remote_addr=<remote_addr:remote_port>")
 )
 
 func main() {
